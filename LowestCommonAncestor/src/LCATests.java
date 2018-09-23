@@ -26,7 +26,7 @@ public class LCATests {
 	    assertEquals("Check normal tree" ,4, graph.findLCA(4,5));
 	    assertEquals("Check normal tree" ,4, graph.findLCA(2,6));
 	    assertEquals("Check normal tree" ,4, graph.findLCA(3,6));
-	    assertEquals("Check normal tree" ,2, graph.findLCA(1,5));
+	    assertEquals("Check normal tree" ,2, graph.findLCA(1,3));
 	    assertEquals("Check normal tree" ,6, graph.findLCA(5,7));
 	}
 	
@@ -44,7 +44,7 @@ public class LCATests {
 	    assertEquals("Check normal tree" ,-4, graph.findLCA(-4,-5));
 	    assertEquals("Check normal tree" ,-4, graph.findLCA(-2,-6));
 	    assertEquals("Check normal tree" ,-4, graph.findLCA(-3,-6));
-	    assertEquals("Check normal tree" ,-2, graph.findLCA(-1,-5));
+	    assertEquals("Check normal tree" ,-2, graph.findLCA(-1,-3));
 	    assertEquals("Check normal tree" ,-6, graph.findLCA(-5,-7));
 	}
 
