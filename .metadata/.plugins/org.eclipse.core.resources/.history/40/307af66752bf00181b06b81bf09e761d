@@ -23,11 +23,11 @@ public class LCATests {
 	    graph.root.right.left  = new Node(5); 
 	    graph.root.right.right = new Node(7); 
 	    
-	    assertEquals("Check normal tree" ,4, graph.findLCA(4,5));
-	    assertEquals("Check normal tree" ,4, graph.findLCA(2,6));
-	    assertEquals("Check normal tree" ,4, graph.findLCA(3,6));
-	    assertEquals("Check normal tree" ,2, graph.findLCA(1,5));
-	    assertEquals("Check normal tree" ,6, graph.findLCA(5,7));
+	    assertEquals("Check normal tree" ,2, graph.findLCA(4,5));
+	    assertEquals("Check normal tree" ,1, graph.findLCA(4,6));
+	    assertEquals("Check normal tree" ,1, graph.findLCA(3,4));
+	    assertEquals("Check normal tree" ,2, graph.findLCA(2,4));
+
 	}
 	
 	@Test
@@ -41,11 +41,11 @@ public class LCATests {
 	    graph.root.right.left  = new Node(-5); 
 	    graph.root.right.right = new Node(-7); 
 	    
-	    assertEquals("Check normal tree" ,-4, graph.findLCA(-4,-5));
-	    assertEquals("Check normal tree" ,-4, graph.findLCA(-2,-6));
-	    assertEquals("Check normal tree" ,-4, graph.findLCA(-3,-6));
-	    assertEquals("Check normal tree" ,-2, graph.findLCA(-1,-5));
-	    assertEquals("Check normal tree" ,-6, graph.findLCA(-5,-7));
+	    assertEquals("Check normal tree" ,-2, graph.findLCA(-4,-5));
+	    assertEquals("Check normal tree" ,-1, graph.findLCA(-4,-6));
+	    assertEquals("Check normal tree" ,-1, graph.findLCA(-3,-4));
+	    assertEquals("Check normal tree" ,-2, graph.findLCA(-2,-4));
+
 	}
 
 }
