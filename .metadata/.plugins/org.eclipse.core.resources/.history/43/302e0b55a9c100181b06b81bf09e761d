@@ -47,23 +47,5 @@ public class LCATests {
 	    assertEquals("Check normal tree" ,-2, graph.findLCA(-3,-1));
 	    assertEquals("Check normal tree" ,-6, graph.findLCA(-7,-5));
 	}
-	
-	@Test
-	public void testBothLCA() {
-		LCA graph  = new LCA(); 
-	    graph.root = new Node(0); 
-	    graph.root.left  = new Node(-2); 
-	    graph.root.right = new Node(2); 
-	    graph.root.left.left  = new Node(-3); 
-	    graph.root.left.right = new Node(-1); 
-	    graph.root.right.left  = new Node(1); 
-	    graph.root.right.right = new Node(3); 
-	    
-	    assertEquals("Check normal tree" ,0, graph.findLCA(0,1));
-	    assertEquals("Check normal tree" ,0, graph.findLCA(-2,2));
-	    assertEquals("Check normal tree" ,0, graph.findLCA(-2,3));
-	    assertEquals("Check normal tree" ,-2, graph.findLCA(-3,-1));
-	    assertEquals("Check normal tree" ,2, graph.findLCA(1,3));
-	}
 
 }

@@ -63,7 +63,7 @@ public class LCATests {
 	    assertEquals("Check normal tree" ,0, graph.findLCA(-2,2));
 	    assertEquals("Check normal tree" ,0, graph.findLCA(-2,3));
 	    assertEquals("Check normal tree" ,-2, graph.findLCA(-3,-1));
-	    assertEquals("Check normal tree" ,2, graph.findLCA(1,3));
+	    assertEquals("Check normal tree" ,-6, graph.findLCA(-7,-5));
 	}
 
 }
