@@ -77,8 +77,7 @@ public class LCATests {
 	    graph.root.right.left  = new Node(5); 
 	    graph.root.right.right = new Node(7); 
 	    
-	    assertEquals("Check normal tree" ,-1, graph.findLCA(-1,-5));
-	    assertEquals("Check normal tree" ,10, graph.findLCA(10,50));
+	    assertEquals("Check normal tree" ,-1, graph.findLCA(-1,5));
 	}
 
 }
